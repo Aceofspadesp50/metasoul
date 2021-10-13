@@ -37,12 +37,8 @@ export const AppBar = () => {
   return (
     <>
       <nav className="navbar">
+      <div className="spacer"></div>
         <div className="navbar-container">
-          {/*<Link to="home" className="navbar-logo" onClick={closedMobileMenu} spy={true} 
-                                smooth={true} 
-                                duration={1000}>
-                                <img src={logo} alt="Logo" />
-    </Link>*/}
           <div className="navbar-socials">
             <a
               href="https://www.twitter.com/solomonsnft"
@@ -129,6 +125,7 @@ export const AppBar = () => {
                     </div>*/
           }
         </div>
+        <div className="spacer"></div>
         <ConnectButton allowWalletChange/>
       </nav>
     </>
