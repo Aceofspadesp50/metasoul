@@ -1,0 +1,343 @@
+.App-Bar {
+  padding: 0px;
+  justify-content: space-between !important;
+}
+
+.app-bar-box {
+  background: #121212;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // padding: 8px 10px;
+  height: 56px;
+}
+
+.app-left {
+  padding: 8px 10px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  padding: 10px 14px 10px 6px;
+
+  margin-bottom: 0px;
+}
+
+.divider {
+  border-left: 1px solid #282828;
+  width: 2px;
+  height: 40px;
+  margin-right: 14px;
+}
+
+.app-btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  border-width: 0px;
+}
+
+.app-bar-inner {
+  display: flex;
+  min-width: 50%;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  .app-bar-item {
+    cursor: pointer;
+    padding: 0 30px;
+    color: @tungsten-60;
+    font-size: 18px;
+    a {
+      color: inherit;
+    }
+    &.active {
+      color: white;
+    }
+  }
+}
+
+// solomon navar
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  top: 0;
+  z-index: 999;
+  width: 100vw !important;
+  position: fixed;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 0px 10px;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0rem 1rem;
+  height: 100%;
+  font-family: 'NoyhGeometricSlimBlack';
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-out;
+}
+
+.nav-links:hover {
+  text-shadow: 0px 6px 6px black;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+.wallet-connector{
+  position: absolute;
+  right: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px !important;
+    right: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+  }
+
+  .nav-menu.active {
+    background: #242222;
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    margin-right: 0px;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+}
+.navbar-logo img{
+  width: 40px;
+}
+
+#nav-bar-logo{
+  z-index: 2;
+}
+
+
+.nav-item{
+  min-width: 160px;
+
+}
+
+.nav-social{
+  color: white;
+  position: absolute;
+  right: 50px;
+}
+
+.nav-social i{
+  padding-right: 20px;
+}
+
+.connect-pc{
+  position: absolute;
+  right: 140px;
+    top: 20px;
+}
+
+.currency-pc{
+  position: inherit;
+}
+
+.btn-mobile{
+  position: inherit;
+  z-index: 2;
+}
+
+.navbar-socials{
+  position: absolute;
+  left: 50px;
+  z-index: 10;
+}
+
+.navbar-socials .fab{
+  font-size: 23px;
+  padding: 0px 10px;
+  text-shadow: 0px 5px 5px rgb(0 0 0 / 50%);
+}
+.navbar-socials .fab:hover{
+  text-shadow: 0px 6px 6px black;
+}
+@media screen and (max-width: 780px) {
+  .navbar .btn{
+    display: none;
+  }
+  .nav-menu{
+    top: 80px;
+    height: 50vh;
+    background: #091127fa;
+  }
+  .navbar-socials{
+    left: 20px;
+  }
+  .nav-menu.active {
+    background: #091128fc;
+    height: 100vh !important;
+  }
+  .cardinfo{
+    margin: 0px;
+    padding: 0 3%;
+  }
+}
+
+// mobile souless nav
+@media screen and (max-width: 780px) {
+  .floating-logo{
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .navbar .btn{
+    display: none;
+  }
+  .hero-info h1{
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  .nav-menu{
+    top: 50px;
+    height: 50vh;
+    background: #091127fa;
+  }
+  .cardExplaination{
+    width: 100%;
+    background-color: #f0f8ff00;
+    border-right: none;
+  }
+  
+}
+
+// new new
+
+.inline {
+  display: inline;
+}
+
