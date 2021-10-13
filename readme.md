@@ -14,4 +14,5 @@ Note that this is only tested on a mac currently. If you are using windows, plea
     -   Fonts
     -   Mint button styles
     -   Connect button styles
+    -   Photos (next/images has default styles that fuck things up)
     -   Herosection logo responsive size
